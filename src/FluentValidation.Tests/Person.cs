@@ -104,9 +104,13 @@ namespace FluentValidation.Tests
 		public decimal Amount { get; set; }
 	}
 
-    public enum EnumGender
-    {
-        Female = 1,
-        Male = 2
-    }
+	public class QuantityOrder : Order {
+		public int Quantity { get; set; }
+  }
+
+	public enum EnumGender
+	{
+		Female = 1,
+    Male = 2
+	}
 }
